@@ -21,9 +21,12 @@ public class GameObject {
     protected ArrayList<Action> actions;
     protected ArrayList<Action> newActions;
     protected boolean isActive ;
+    protected Color color;
 
     private static Vector<GameObject> gameObjects = new Vector<>();
     private static Vector<GameObject> newGameObjects = new Vector<>();
+
+    private boolean initialized;
 
     public GameObject() {
         children = new ArrayList<>();
@@ -32,9 +35,29 @@ public class GameObject {
         position = new Vector2();
         screenPosition = new Vector2();
         isActive = true;
+        initialized = false;
     }
 
     public void run(Vector2 parentPosition){
+        if (!initialized) {
+            if (body != null) {
+                Physics.world.addBody(body);
+            }
+            body.translate(position.add(parentPosition).toWorld());
+            body.classz = this.getClass();
+            initialized = true;
+            //TODO: Recycle
+        }
+        updateFromBody();
+        normalUpdate(parentPosition);
+    }
+
+    private void updateFromBody() {
+        this.position = this.body.getTransform().getTranslation().toNormal();
+        //System.out.println(this.body.getTransform().getTranslation().x);
+    }
+
+    private void normalUpdate(Vector2 parentPosition) {
         screenPosition = parentPosition.add(position);
         for (GameObject child : children){
             if (child.isActive){
@@ -45,10 +68,7 @@ public class GameObject {
 
     public static void runAll(){
         for(GameObject gameObject : gameObjects){
-            if(gameObject.isActive){
-                //gameObject.body.translate(0, 0.01);
-                gameObject.position = gameObject.body.getTransform().getTranslation().toNormal();
-                //System.out.println(gameObject.position);
+            if(gameObject.isActive) {
                 gameObject.run(new Vector2(0,0));
             }
         }
@@ -64,8 +84,9 @@ public class GameObject {
 
     public void render(Graphics2D g2d){
         if (renderer != null){
-            renderer.render(g2d, screenPosition, this.body);
+            renderer.render(g2d, screenPosition, this.body, this.color);
         }
+
         for (GameObject child : children){
             if (child.isActive)
                 child.render(g2d);

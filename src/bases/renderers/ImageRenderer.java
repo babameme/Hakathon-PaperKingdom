@@ -17,7 +17,7 @@ public class ImageRenderer implements Renderer {
         this.anchor = new Vector2(0.5f, 0.5f);
     }
 
-    public void render(Graphics2D g2d, Vector2 position, Body body) {
+    public void render(Graphics2D g2d, Vector2 position, Body body, Color color) {
         g2d.drawImage(image,
                 (int)(position.x - (image.getWidth() * anchor.x)),
                 (int)(position.y - (image.getHeight() * anchor.y)),

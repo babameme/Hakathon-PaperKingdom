@@ -28,6 +28,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import bases.GameObject;
 import bases.physics.PhysicsBody;
 import org.dyn4j.DataContainer;
 import org.dyn4j.Epsilon;
@@ -168,6 +169,8 @@ public class Body extends AbstractCollidable<BodyFixture> implements Collidable<
 	public Body() {
 		this(AbstractCollidable.TYPICAL_FIXTURE_COUNT);
 	}
+
+	public Class<?> classz;
 	
 	/**
 	 * Optional constructor.

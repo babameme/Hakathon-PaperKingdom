@@ -48,10 +48,10 @@ public final class Graphics2DRenderer {
 	public static final void render(Graphics2D g, Shape shape, double scale, Color color) {
 		// no-op
 		if (shape == null) return;
-		
+
 		// just default the color
 		if (color == null) color = Color.ORANGE;
-		
+
 		if (shape instanceof Circle) {
 			Graphics2DRenderer.render(g, (Circle)shape, scale, color);
 		} else if (shape instanceof Polygon) {
@@ -70,7 +70,7 @@ public final class Graphics2DRenderer {
 			// unknown shape
 		}
 	}
-	
+
 	/**
 	 * Renders the given {@link Circle} to the given graphics context using the given scale and color.
 	 * @param g the graphics context
@@ -81,30 +81,30 @@ public final class Graphics2DRenderer {
 	public static final void render(Graphics2D g, Circle circle, double scale, Color color) {
 		double radius = circle.getRadius();
 		Vector2 center = circle.getCenter();
-		
+
 		double radius2 = 2.0 * radius;
 		Ellipse2D.Double c = new Ellipse2D.Double(
-			(center.x - radius) * scale,
-			(center.y - radius) * scale,
-			radius2 * scale,
-			radius2 * scale);
-		
+				(center.x - radius) * scale,
+				(center.y - radius) * scale,
+				radius2 * scale,
+				radius2 * scale);
+
 		// fill the shape
 		g.setColor(color);
 		g.fill(c);
 		// draw the outline
-//		g.setColor(getOutlineColor(color));
-//		g.draw(c);
-		
+		g.setColor(getOutlineColor(color));
+		g.draw(c);
+
 		// draw a line so that rotation is visible
-//		Line2D.Double l = new Line2D.Double(
-//				center.x * scale,
-//				center.y * scale,
-//				(center.x + radius) * scale,
-//				center.y * scale);
-//		g.draw(l);
+		Line2D.Double l = new Line2D.Double(
+				center.x * scale,
+				center.y * scale,
+				(center.x + radius) * scale,
+				center.y * scale);
+		g.draw(l);
 	}
-	
+
 	/**
 	 * Renders the given {@link Polygon} to the given graphics context using the given scale and color.
 	 * @param g the graphics context
@@ -115,7 +115,7 @@ public final class Graphics2DRenderer {
 	public static final void render(Graphics2D g, Polygon polygon, double scale, Color color) {
 		Vector2[] vertices = polygon.getVertices();
 		int l = vertices.length;
-		
+
 		// create the awt polygon
 		Path2D.Double p = new Path2D.Double();
 		p.moveTo(vertices[0].x * scale, vertices[0].y * scale);
@@ -123,7 +123,7 @@ public final class Graphics2DRenderer {
 			p.lineTo(vertices[i].x * scale, vertices[i].y * scale);
 		}
 		p.closePath();
-		
+
 		// fill the shape
 		g.setColor(color);
 		g.fill(p);
@@ -131,7 +131,7 @@ public final class Graphics2DRenderer {
 		g.setColor(getOutlineColor(color));
 		g.draw(p);
 	}
-	
+
 	/**
 	 * Renders the given {@link Segment} to the given graphics context using the given scale and color.
 	 * @param g the graphics context
@@ -141,18 +141,18 @@ public final class Graphics2DRenderer {
 	 */
 	public static final void render(Graphics2D g, Segment segment, double scale, Color color) {
 		Vector2[] vertices = segment.getVertices();
-		
+
 		Line2D.Double l = new Line2D.Double(
-			vertices[0].x * scale,
-			vertices[0].y * scale,
-			vertices[1].x * scale,
-			vertices[1].y * scale);
-		
+				vertices[0].x * scale,
+				vertices[0].y * scale,
+				vertices[1].x * scale,
+				vertices[1].y * scale);
+
 		// draw the outline
 		g.setColor(getOutlineColor(color));
 		g.draw(l);
 	}
-	
+
 	/**
 	 * Renders the given {@link Capsule} to the given graphics context using the given scale and color.
 	 * @param g the graphics context
@@ -164,17 +164,17 @@ public final class Graphics2DRenderer {
 		// get the local rotation and translation
 		double rotation = capsule.getRotation();
 		Vector2 center = capsule.getCenter();
-		
+
 		// save the old transform
 		AffineTransform oTransform = g.getTransform();
 		// translate and rotate
 		g.translate(center.x * scale, center.y * scale);
 		g.rotate(rotation);
-		
+
 		double width = capsule.getLength();
 		double radius = capsule.getCapRadius();
 		double radius2 = radius * 2.0;
-		
+
 		Arc2D.Double arcL = new Arc2D.Double(
 				-(width * 0.5) * scale,
 				-radius * scale,
@@ -191,14 +191,14 @@ public final class Graphics2DRenderer {
 				-90.0,
 				180.0,
 				Arc2D.OPEN);
-		
+
 		// connect the shapes
 		Path2D.Double path = new Path2D.Double();
 		path.append(arcL, true);
 		path.append(new Line2D.Double(arcL.getEndPoint(), arcR.getStartPoint()), true);
 		path.append(arcR, true);
 		path.append(new Line2D.Double(arcR.getEndPoint(), arcL.getStartPoint()), true);
-		
+
 		// set the color
 		g.setColor(color);
 		// fill the shape
@@ -207,11 +207,11 @@ public final class Graphics2DRenderer {
 		g.setColor(getOutlineColor(color));
 		// draw the shape
 		g.draw(path);
-		
+
 		// re-instate the old transform
 		g.setTransform(oTransform);
 	}
-	
+
 	/**
 	 * Renders the given {@link Ellipse} to the given graphics context using the given scale and color.
 	 * @param g the graphics context
@@ -223,31 +223,31 @@ public final class Graphics2DRenderer {
 		// get the local rotation and translation
 		double rotation = ellipse.getRotation();
 		Vector2 center = ellipse.getCenter();
-		
+
 		// save the old transform
 		AffineTransform oTransform = g.getTransform();
 		g.translate(center.x * scale, center.y * scale);
 		g.rotate(rotation);
-		
+
 		double width = ellipse.getWidth();
 		double height = ellipse.getHeight();
 		Ellipse2D.Double c = new Ellipse2D.Double(
-			(-width * 0.5) * scale,
-			(-height * 0.5) * scale,
-			width * scale,
-			height * scale);
-		
+				(-width * 0.5) * scale,
+				(-height * 0.5) * scale,
+				width * scale,
+				height * scale);
+
 		// fill the shape
 		g.setColor(color);
 		g.fill(c);
 		// draw the outline
 		g.setColor(getOutlineColor(color));
 		g.draw(c);
-		
+
 		// re-instate the old transform
 		g.setTransform(oTransform);
 	}
-	
+
 	/**
 	 * Renders the given {@link Slice} to the given graphics context using the given scale and color.
 	 * @param g the graphics context
@@ -258,38 +258,38 @@ public final class Graphics2DRenderer {
 	public static final void render(Graphics2D g, Slice slice, double scale, Color color) {
 		double radius = slice.getSliceRadius();
 		double theta2 = slice.getTheta() * 0.5;
-		
+
 		// get the local rotation and translation
 		double rotation = slice.getRotation();
 		Vector2 circleCenter = slice.getCircleCenter();
-		
+
 		// save the old transform
 		AffineTransform oTransform = g.getTransform();
 		// translate and rotate
 		g.translate(circleCenter.x * scale, circleCenter.y * scale);
 		g.rotate(rotation);
-		
+
 		// to draw the arc, java2d wants the top left x,y
 		// as if you were drawing a circle
-		Arc2D a = new Arc2D.Double(-radius * scale, 
+		Arc2D a = new Arc2D.Double(-radius * scale,
 				-radius * scale,
-				2.0 * radius * scale, 
+				2.0 * radius * scale,
 				2.0 * radius * scale,
 				-Math.toDegrees(theta2),
 				Math.toDegrees(2.0 * theta2),
 				Arc2D.PIE);
-		
+
 		// fill the shape
 		g.setColor(color);
 		g.fill(a);
 		// draw the outline
 		g.setColor(getOutlineColor(color));
 		g.draw(a);
-		
+
 		// re-instate the old transform
 		g.setTransform(oTransform);
 	}
-	
+
 	/**
 	 * Renders the given {@link HalfEllipse} to the given graphics context using the given scale and color.
 	 * @param g the graphics context
@@ -300,39 +300,39 @@ public final class Graphics2DRenderer {
 	public static final void render(Graphics2D g, HalfEllipse halfEllipse, double scale, Color color) {
 		double width = halfEllipse.getWidth();
 		double height = halfEllipse.getHeight();
-		
+
 		// get the local rotation and translation
 		double rotation = halfEllipse.getRotation();
 		Vector2 center = halfEllipse.getEllipseCenter();
-		
+
 		// save the old transform
 		AffineTransform oTransform = g.getTransform();
 		// translate and rotate
 		g.translate(center.x * scale, center.y * scale);
 		g.rotate(rotation);
-		
+
 		// to draw the arc, java2d wants the top left x,y
 		// as if you were drawing a circle
 		Arc2D a = new Arc2D.Double(
-				(-width * 0.5) * scale, 
+				(-width * 0.5) * scale,
 				-height * scale,
-				width * scale, 
+				width * scale,
 				height * 2.0 * scale,
 				0,
 				-180.0,
 				Arc2D.PIE);
-		
+
 		// fill the shape
 		g.setColor(color);
 		g.fill(a);
 		// draw the outline
 		g.setColor(getOutlineColor(color));
 		g.draw(a);
-		
+
 		// re-instate the old transform
 		g.setTransform(oTransform);
 	}
-	
+
 	/**
 	 * Returns the outline color for the given color.
 	 * @param color the fill color

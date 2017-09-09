@@ -5,9 +5,10 @@ import org.dyn4j.dynamics.Body;
 import org.dyn4j.geometry.Vector2;
 
 
-import java.awt.Graphics2D;
+import java.awt.*;
 import java.util.*;
 import java.awt.image.BufferedImage;
+import java.util.List;
 
 public class Animation implements Renderer {
 
@@ -31,7 +32,7 @@ public class Animation implements Renderer {
     }
 
     @Override
-    public void render(Graphics2D g2d, Vector2 position, Body body) {
+    public void render(Graphics2D g2d, Vector2 position, Body body, Color color) {
         if (!stopped) {
             BufferedImage image = images.get(currentImageIndex);
             Vector2 renderPosition = position.subtract(

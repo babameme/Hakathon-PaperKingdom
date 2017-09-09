@@ -1,11 +1,15 @@
 import bases.GameObject;
 import bases.friends.Friend;
+import bases.inputs.InputManager;
 import bases.inputs.MouseManager;
 import bases.obstacles.Obstacles;
 import bases.physics.Physics;
 import bases.physics.PhysicsBody;
 import bases.players.Player;
 import bases.renderers.ImageRenderer;
+import bases.scenes.Level1Scene;
+import bases.scenes.SceneManager;
+import bases.scenes.TestMenu;
 import bases.settings.Settings;
 import org.dyn4j.dynamics.Body;
 import org.dyn4j.geometry.Circle;
@@ -14,6 +18,8 @@ import org.dyn4j.geometry.Vector2;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferStrategy;
@@ -57,6 +63,24 @@ public class GameWindow extends JFrame{
             }
         });
         setupLevel();
+        this.addKeyListener(new KeyListener() {
+
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                InputManager.instance.keyPressed(e);
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+                InputManager.instance.keyReleased(e);
+            }
+        });
+
     }
 
     public void loop(){
@@ -69,6 +93,7 @@ public class GameWindow extends JFrame{
             diff = currentTime - lastTimeUpdate;
             if (diff > 17000000) {
                 gameLoop();
+                SceneManager.changeSceneIfNeeded();
                 elapsedTime = diff / NANO_TO_BASE;
                 lastTimeUpdate = currentTime;
             }
@@ -108,38 +133,6 @@ public class GameWindow extends JFrame{
     }
 
     private void setupLevel() {
-        GameObject gameObject = new GameObject();
-        gameObject.setRenderer(ImageRenderer.create("assets/images/green_square.png"));
-//        gameObject.getPosition().set(100,100);
-////        System.out.println(position);
-//        GameObject.add(gameObject);
-//        Body body = new Body();
-//        //System.out.println(gameObject.getPosition());
-//        body.translate(gameObject.getPosition().toWorld());
-//        //System.out.println(body.getTransform().getTranslation());
-//        Physics.add((PhysicsBody) body);
-//        gameObject.setBody(body);
-
-        //Player player = new Player();
-        //player.getPosition().set(10, 100);
-        ///System.out.println(player.getPosition());
-        //player.getBody().translate(player.getPosition().toWorld());
-        //.out.println(player.getBody().getTransform().getTranslation());
-        //GameObject.add(player);
-
-        Player player = new Player(new Rectangle(1, 1), 2, 3.6);
-        player.getPosition().set(10, 100);
-        GameObject.add(player);
-
-        Friend friend = new Friend(new Circle(2), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(300, 140);
-        GameObject.add(friend);
-
-        Obstacles obstacle = new Obstacles(new Rectangle(3, 4), 5, 30, new Vector2(0, 0));
-        obstacle.getPosition().set(150, 100);
-        GameObject.add(obstacle);
-
+        SceneManager.changeScene(new Level1Scene());
     }
-
-
 }

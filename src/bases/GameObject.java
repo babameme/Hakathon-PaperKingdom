@@ -38,48 +38,88 @@ public class GameObject {
         initialized = false;
     }
 
-    public void run(Vector2 parentPosition){
+    public void addChild(GameObject child) {
+        this.children.add(child);
+    }
+
+    public void start(Vector2 parentPosition) {
         if (!initialized) {
             if (body != null) {
                 Physics.world.addBody(body);
+                body.translate(position.sum(parentPosition).toWorld());
+                body.classz = this.getClass();
             }
-            body.translate(position.add(parentPosition).toWorld());
-            body.classz = this.getClass();
             initialized = true;
             //TODO: Recycle
         }
+
+        for (GameObject child: children) {
+            if (child.isActive)
+                child.start(position.sum(parentPosition));
+        }
+    }
+
+    public final void run(Vector2 parentPosition){
+        start(parentPosition);
         updateFromBody();
         normalUpdate(parentPosition);
     }
 
-    private void updateFromBody() {
-        this.position = this.body.getTransform().getTranslation().toNormal();
-        //System.out.println(this.body.getTransform().getTranslation().x);
+    protected void updateFromBody() {
+        if (body != null)
+            this.position = this.body.getTransform().getTranslation().toNormal();
+        for (GameObject child : children)  {
+            child.updateFromBody();
+        }
+        //System.out.priasdntln(this.body.getTransform().getTranslation().x);
     }
 
     protected void normalUpdate(Vector2 parentPosition) {
-        screenPosition = parentPosition.add(position);
+        screenPosition = parentPosition.sum(position);
+        //System.out.println(String.format("%s: parentPostion=%s, position=%s screenPosition=%s", getClass(), parentPosition, screenPosition));
+
         for (GameObject child : children){
+            //System.out.println(String.format("%s has %s", getClass(), child.getClass()));
             if (child.isActive){
-                child.run(screenPosition);
+                child.normalUpdate(screenPosition);
             }
         }
     }
 
-    public static void runAll(){
-        for(GameObject gameObject : gameObjects){
-            if(gameObject.isActive) {
-                gameObject.run(new Vector2(0,0));
-            }
-        }
+    public static void runAll() {
+        startAll();
+        updateFromBodyAAll();
+        normalUpdateAll();
 
         for (GameObject newGameObject : newGameObjects){
             if (newGameObject instanceof PhysicsBody){
                 Physics.add((PhysicsBody)newGameObject);
             }
         }
+
         gameObjects.addAll(newGameObjects);
         newGameObjects.clear();
+    }
+
+    private static void normalUpdateAll() {
+        for (GameObject gameObject: gameObjects) {
+            if (gameObject.isActive)
+                gameObject.normalUpdate(new Vector2(0, 0));
+        }
+    }
+
+    private static void updateFromBodyAAll() {
+        for (GameObject gameObject: gameObjects) {
+            if (gameObject.isActive)
+                gameObject.updateFromBody();
+        }
+    }
+
+    private static void startAll() {
+        for (GameObject gameObject: gameObjects) {
+            if (gameObject.isActive)
+                gameObject.start(new Vector2(0, 0));
+        }
     }
 
     public void render(Graphics2D g2d){
@@ -99,6 +139,12 @@ public class GameObject {
                 gameObject.render(g2d);
             }
         }
+    }
+
+    public static void clearAll() {
+        gameObjects.clear();
+        newGameObjects.clear();
+        Physics.clearAll();
     }
 
     public void reset(){

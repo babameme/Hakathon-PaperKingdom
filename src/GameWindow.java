@@ -1,5 +1,9 @@
 import bases.GameObject;
+import bases.physics.Physics;
+import bases.physics.PhysicsBody;
+import bases.renderers.ImageRenderer;
 import bases.settings.Settings;
+import org.dyn4j.dynamics.Body;
 import org.dyn4j.geometry.Vector2;
 
 import javax.swing.*;
@@ -11,7 +15,7 @@ import java.awt.image.BufferStrategy;
 public class GameWindow extends JFrame{
     public static final double NANO_TO_BASE = 1.0e9;
     protected final Canvas canvas;
-    protected final double scale;
+     final double scale;
     protected final Dimension size;
     private long lastTimeUpdate, currentTime, diff;
     private double elapsedTime;
@@ -20,9 +24,9 @@ public class GameWindow extends JFrame{
     //private Camera camera;
     private Vector2 position;
 
-    public GameWindow(String name, double scale){
+    public GameWindow(String name){
         super(name);
-        this.scale = scale;
+        this.scale = Settings.scale;
         size = new Dimension(Settings.instance.getGamePlayWidth(), Settings.instance.getGamePlayHeight());
         this.canvas = new Canvas();
         this.canvas.setPreferredSize(size);
@@ -83,8 +87,9 @@ public class GameWindow extends JFrame{
     }
 
     private void run(Graphics2D g2d, double elapsedTime) {
+        Physics.world.update(elapsedTime);
         GameObject.runAll();
-        GameObject.runAllActions();
+        //GameObject.runAllActions();
     }
 
     private void clear(Graphics2D g2d) {
@@ -93,6 +98,17 @@ public class GameWindow extends JFrame{
     }
 
     private void setupLevel() {
+        GameObject gameObject = new GameObject();
+        gameObject.setRenderer(ImageRenderer.create("assets/images/green_square.png"));
+        gameObject.getPosition().set(100,100);
+//        System.out.println(position);
+        GameObject.add(gameObject);
+        Body body = new Body();
+        //System.out.println(gameObject.getPosition());
+        body.translate(gameObject.getPosition().toWorld());
+        //System.out.println(body.getTransform().getTranslation());
+        Physics.add((PhysicsBody) body);
+        gameObject.setBody(body);
     }
 
 

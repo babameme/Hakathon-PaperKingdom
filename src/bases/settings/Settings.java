@@ -11,6 +11,11 @@ public class Settings {
 
     private int gamePlayWidth;
     private int gamePlayHeight;
+    public static final double scale = 10.0;
+    public Color playerColor = Color.BLUE;
+    public Color obstacleColor = Color.RED;
+    public Color friendColor = Color.GREEN;
+    public Color backgroundColor = Color.WHITE;
 
     public static final Settings instance = new Settings();
 
@@ -25,6 +30,22 @@ public class Settings {
 
     public int getGamePlayHeight() {
         return gamePlayHeight;
+    }
+
+    public Color getPlayerColor() {
+        return playerColor;
+    }
+
+    public Color getObstacleColor() {
+        return obstacleColor;
+    }
+
+    public Color getFriendColor() {
+        return friendColor;
+    }
+
+    public Color getBackgroundColor() {
+        return backgroundColor;
     }
 
     private Settings() {

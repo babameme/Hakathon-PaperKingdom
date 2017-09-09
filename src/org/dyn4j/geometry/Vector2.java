@@ -24,6 +24,7 @@
  */
 package org.dyn4j.geometry;
 
+import bases.settings.Settings;
 import org.dyn4j.Epsilon;
 
 /**
@@ -763,4 +764,12 @@ public class Vector2 {
 		if (a < -Math.PI) return a + Geometry.TWO_PI;
 		return a;
 	}
+
+    public Vector2 toNormal() {
+		return new Vector2(this.x * Settings.scale + Settings.instance.getGamePlayWidth() / 2, -this.y * Settings.scale + Settings.instance.getGamePlayHeight() / 2);
+    }
+
+    public Vector2 toWorld() {
+		return (new Vector2(this.x - Settings.instance.getGamePlayWidth() / 2, -this.y + Settings.instance.getGamePlayHeight() / 2)).product((double) 1/ Settings.scale);
+    }
 }

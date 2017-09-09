@@ -28,6 +28,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import bases.physics.PhysicsBody;
 import org.dyn4j.DataContainer;
 import org.dyn4j.Epsilon;
 import org.dyn4j.collision.AbstractCollidable;
@@ -83,7 +84,7 @@ import org.dyn4j.resources.Messages;
  * @version 3.2.0
  * @since 1.0.0
  */
-public class Body extends AbstractCollidable<BodyFixture> implements Collidable<BodyFixture>, Transformable, DataContainer {
+public class Body extends AbstractCollidable<BodyFixture> implements Collidable<BodyFixture>, Transformable, DataContainer , PhysicsBody{
 	/** The default linear damping; value = {@value #DEFAULT_LINEAR_DAMPING} */
 	public static final double DEFAULT_LINEAR_DAMPING = 0.0;
 	
@@ -1623,5 +1624,8 @@ public class Body extends AbstractCollidable<BodyFixture> implements Collidable<
 		}
 		// return the connected bodies
 		return contactPoints;
+	}
+	public Body getBody(){
+		return this;
 	}
 }

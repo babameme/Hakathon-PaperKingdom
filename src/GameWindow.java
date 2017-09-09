@@ -1,5 +1,6 @@
 import bases.GameObject;
 import bases.friends.Friend;
+import bases.inputs.MouseManager;
 import bases.obstacles.Obstacles;
 import bases.physics.Physics;
 import bases.physics.PhysicsBody;
@@ -92,7 +93,11 @@ public class GameWindow extends JFrame{
     }
 
     private void run(Graphics2D g2d, double elapsedTime) {
+        //TODO : Hoi anh Huy update physic truoc hay la update chuot truc
         Physics.world.update(elapsedTime);
+        int x = MouseInfo.getPointerInfo().getLocation().x - this.getLocationOnScreen().x;
+        int y = MouseInfo.getPointerInfo().getLocation().y - this.getLocationOnScreen().y;
+        MouseManager.instance.position = new Vector2(x, y);
         GameObject.runAll();
         //GameObject.runAllActions();
     }

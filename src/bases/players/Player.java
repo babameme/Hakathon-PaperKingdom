@@ -1,6 +1,7 @@
 package bases.players;
 
 import bases.GameObject;
+import bases.inputs.MouseManager;
 import bases.obstacles.Obstacles;
 import bases.physics.Physics;
 import bases.renderers.BodyRenderer;
@@ -33,10 +34,17 @@ public class Player extends GameObject {
     }
 
     @Override
-    public void run(Vector2 parentPosition) {
-        super.run(parentPosition);
+    protected void normalUpdate(Vector2 parentPosition) {
+        super.normalUpdate(parentPosition);
         if (Physics.PlayerCollideWith(Obstacles.class)){
             System.out.println("Lazy ");
         }
+        double mouseY = (Settings.instance.getGamePlayHeight()/2 - MouseManager.instance.position.y) / Settings.scale;
+        double y = Player.getInstance().getBody().getTransform().getTranslationY();
+        double vy = mouseY - y;
+        if (Math.abs(vy) < 1){
+            vy = 0;
+        }
+        this.getBody().setLinearVelocity(SPEED, vy * SPEED / 2);
     }
 }

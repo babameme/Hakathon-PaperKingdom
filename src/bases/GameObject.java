@@ -57,7 +57,7 @@ public class GameObject {
         //System.out.println(this.body.getTransform().getTranslation().x);
     }
 
-    private void normalUpdate(Vector2 parentPosition) {
+    protected void normalUpdate(Vector2 parentPosition) {
         screenPosition = parentPosition.add(position);
         for (GameObject child : children){
             if (child.isActive){

@@ -8,11 +8,11 @@ import tklibs.SpriteUtils;
 
 public class Music extends GameObject{
     TextRenderer textRenderer;
-    public Music() {
-        super();
-        //this.textRenderer = new TextRenderer("MUSIC");
-        this.position.set(Settings.instance.getGamePlayWidth()/2 - 50, Settings.instance.getGamePlayHeight()/2 + 50);
+    public void add(boolean stage) {
+        this.textRenderer = new TextRenderer("CLOSE MUSIC", stage);
+        this.position.set(Settings.instance.getGamePlayWidth()/4 - 50, Settings.instance.getGamePlayHeight()/2 + 50);
         this.renderer = textRenderer;
+        GameObject.add(this);
     }
 
 }

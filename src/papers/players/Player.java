@@ -1,6 +1,9 @@
 package papers.players;
 
 import bases.GameObject;
+import bases.actions.Action;
+import bases.actions.SequenceAction;
+import bases.actions.WaitAction;
 import bases.inputs.MouseManager;
 import bases.physics.Physics;
 import bases.renderers.BodyRenderer;
@@ -12,11 +15,12 @@ import org.dyn4j.geometry.*;
 import papers.obstacles.Obstacle;
 
 public class Player extends GameObject {
-    private static final double SPEED = 10;
+    private static final double SPEED = 8;
     private float radius = 100;
 
     private static Player instance = null;
-    public boolean death = false;
+    static boolean death = false;
+    private boolean mouseEnabled;
 
     public static Player getInstance() {
         return instance;
@@ -32,26 +36,50 @@ public class Player extends GameObject {
         body.setAngularVelocity(angularVelocity);
         this.color = Settings.instance.playerColor;
         this.renderer = new BodyRenderer();
+        this.mouseEnabled = false;
 
         instance = this;
+
+        configActions();
+    }
+
+    private void configActions() {
+        this.addAction(new SequenceAction(
+                new WaitAction(20),
+                new Action() {
+                    @Override
+                    public boolean run(GameObject owner) {
+                        Player player = (Player)owner;
+                        player.mouseEnabled = true;
+                        return true;
+                    }
+                }
+        ));
     }
 
     @Override
     protected void normalUpdate(Vector2 parentPosition) {
-        super.normalUpdate(parentPosition);
         if (Physics.PlayerCollideWith(Obstacle.class)){
-            //System.out.println("Lazy ");
+            System.out.println("Lazy ");
             death = true;
         }
+
+        if (death){
+            SceneManager.changeScene(new GameOver());
+        }
+        super.normalUpdate(parentPosition);
+        moveVerticalTowardsMouse();
+    }
+
+    private void moveVerticalTowardsMouse() {
+        if (!mouseEnabled) return;
+
         double mouseY = (Settings.instance.getGamePlayHeight()/2 - MouseManager.instance.position.y) / Settings.scale;
         double y = Player.getInstance().getBody().getTransform().getTranslationY();
         double vy = mouseY - y;
         if (Math.abs(vy) < 1){
             vy = 0;
         }
-        this.getBody().setLinearVelocity(SPEED, vy * SPEED / 2);
-        if (death){
-            SceneManager.changeScene(new GameOver());
-        }
+        this.getBody().setLinearVelocity(SPEED, vy * SPEED / 5);
     }
 }

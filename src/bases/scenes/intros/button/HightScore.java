@@ -7,12 +7,12 @@ import bases.settings.Settings;
 public class HightScore extends GameObject {
     TextRenderer textRenderer;
 
-    public HightScore() {
-        super();
-        //this.textRenderer = new TextRenderer("HIGH SCORE");
+    public void add(boolean stage) {
+        this.textRenderer = new TextRenderer("HIGH SCORE",stage);
 
-        this.position.set(Settings.instance.getGamePlayWidth()/2 - 50, Settings.instance.getGamePlayHeight()/2);
+        this.position.set(Settings.instance.getGamePlayWidth()/4 - 50 , Settings.instance.getGamePlayHeight()/2 + 100);
         this.renderer = textRenderer;
+        GameObject.add(this);
     }
 
 }

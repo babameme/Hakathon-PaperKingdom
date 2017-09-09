@@ -14,9 +14,9 @@ public class Lv1Scene extends Scene {
     @Override
     public void init() {
         Player player = new Player(new Circle(1), 0, 0);
-        player.getPosition().set(20, 215);
+        player.getPosition().set(20, 200);
         GameObject.add(player);
-        /*
+
         Obstacle obstacle1 = new Obstacle(new Rectangle(5, 20), 0, 0, new Vector2(0, 0));
         obstacle1.getPosition().set(20, 70);
         GameObject.add(obstacle1);
@@ -125,6 +125,6 @@ public class Lv1Scene extends Scene {
 
         Obstacle obstacle = new Obstacle(new Rectangle(1, 5), 0, 3, new Vector2(0, 0));
         obstacle1.getPosition().set(340, 200);
-        GameObject.add(obstacle1);*/
+        GameObject.add(obstacle1);
     }
 }

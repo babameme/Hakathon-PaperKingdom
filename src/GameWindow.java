@@ -4,6 +4,8 @@ import bases.inputs.MouseManager;
 import bases.physics.Physics;
 import bases.scenes.SceneManager;
 import bases.scenes.gameOver.GameOver;
+//import bases.scenes.intros.IntroScene;
+import bases.scenes.intros.IntroScene;
 import bases.settings.Settings;
 import org.dyn4j.geometry.Vector2;
 
@@ -123,6 +125,6 @@ public class GameWindow extends JFrame{
     }
 
     private void setupLevel() {
-        SceneManager.changeScene(new GameOver());
+        SceneManager.changeScene(new IntroScene());
     }
 }

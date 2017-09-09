@@ -2,7 +2,12 @@ package bases.actions;
 
 import bases.GameObject;
 
-public interface Action {
-    //can truyen 1 thang gameobject vao de biet thg nao run action nay
-    public boolean run(GameObject gameObject);
+/**
+ * Created by huynq on 8/26/17.
+ */
+public abstract class Action {
+    public abstract boolean run(GameObject owner);
+    public void reset() {
+
+    }
 }

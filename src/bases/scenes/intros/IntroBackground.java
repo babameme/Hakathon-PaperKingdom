@@ -12,7 +12,7 @@ public class IntroBackground extends GameObject {
         public IntroBackground() {
             super();
             this.imageRenderer = new ImageRenderer(
-                    SpriteUtils.loadImage("assets/images/background.png")
+                    SpriteUtils.loadImage("assets/images/huhu.png")
             );
             this.imageRenderer.getAnchor().set(0, 1);
             this.position.set(0, Settings.instance.getGamePlayHeight());

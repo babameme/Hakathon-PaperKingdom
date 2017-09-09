@@ -12,6 +12,7 @@ public class GameOver extends Scene {
 
     @Override
     public void init() {
+        System.out.println("Game over");
         addImage();
     }
 

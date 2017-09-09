@@ -2,10 +2,9 @@ package bases.actions;
 
 import bases.FrameCounter;
 import bases.GameObject;
-import bases.renderers.Animation;
 
 //lam test 1 con action co ban, action cho`
-public class ActionWait implements Action {
+public class ActionWait extends Action {
     private FrameCounter frameCounter;
 
     public ActionWait(int count) {
@@ -16,6 +15,11 @@ public class ActionWait implements Action {
     public boolean run(GameObject gameObject) {
         //đoạn này dễ đúng ko, địa khái là chờ cho cái framecounter run xong
         return frameCounter.run();
+    }
+
+    @Override
+    public void reset() {
+
     }
 
     public FrameCounter getFrameCounter() {

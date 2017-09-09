@@ -71,7 +71,6 @@ public class GameObject {
         for (GameObject child : children)  {
             child.updateFromBody();
         }
-        //System.out.priasdntln(this.body.getTransform().getTranslation().x);
     }
 
     protected void normalUpdate(Vector2 parentPosition) {
@@ -90,6 +89,7 @@ public class GameObject {
         startAll();
         updateFromBodyAAll();
         normalUpdateAll();
+        actionUpdateAll();
 
         for (GameObject newGameObject : newGameObjects){
             if (newGameObject instanceof PhysicsBody){
@@ -99,6 +99,22 @@ public class GameObject {
 
         gameObjects.addAll(newGameObjects);
         newGameObjects.clear();
+    }
+
+    private static void actionUpdateAll() {
+        for (GameObject gameObject: gameObjects) {
+            gameObject.actionUpdate();
+        }
+    }
+
+    private void actionUpdate() {
+        actions.removeIf(action -> action.run(this));
+        actions.addAll(newActions);
+        newActions.clear();
+    }
+
+    public final void addAction(Action action) {
+        newActions.add(action);
     }
 
     private static void normalUpdateAll() {

@@ -7,8 +7,6 @@ import bases.settings.Settings;
 public class HightScore extends GameObject {
     TextRenderer textRenderer;
 
-
-
     public HightScore() {
         super();
         //this.textRenderer = new TextRenderer("HIGH SCORE");

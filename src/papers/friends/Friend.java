@@ -1,4 +1,4 @@
-package bases.friends;
+package papers.friends;
 
 import bases.GameObject;
 import bases.renderers.BodyRenderer;

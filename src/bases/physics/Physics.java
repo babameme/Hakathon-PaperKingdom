@@ -1,7 +1,6 @@
 package bases.physics;
 
 import bases.GameObject;
-import bases.players.Player;
 import org.dyn4j.collision.broadphase.BroadphasePair;
 import org.dyn4j.collision.narrowphase.Gjk;
 import org.dyn4j.collision.narrowphase.NarrowphaseDetector;
@@ -11,6 +10,7 @@ import org.dyn4j.dynamics.BodyFixture;
 import org.dyn4j.dynamics.World;
 import org.dyn4j.geometry.Convex;
 import org.dyn4j.geometry.Transform;
+import papers.players.Player;
 
 import java.util.List;
 

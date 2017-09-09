@@ -1,20 +1,10 @@
 import bases.GameObject;
-import bases.friends.Friend;
 import bases.inputs.InputManager;
 import bases.inputs.MouseManager;
-import bases.obstacles.Obstacles;
 import bases.physics.Physics;
-import bases.physics.PhysicsBody;
-import bases.players.Player;
-import bases.renderers.ImageRenderer;
 import bases.scenes.SceneManager;
 import bases.scenes.gameOver.GameOver;
-import bases.scenes.intros.IntroScene;
-import bases.scenes.levelScenes.Lv1Scene;
 import bases.settings.Settings;
-import org.dyn4j.dynamics.Body;
-import org.dyn4j.geometry.Circle;
-import org.dyn4j.geometry.Rectangle;
 import org.dyn4j.geometry.Vector2;
 
 import javax.swing.*;

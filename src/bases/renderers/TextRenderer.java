@@ -29,4 +29,8 @@ public class TextRenderer implements Renderer {
 
         g2d.drawString(text, (int) position.x,(int) position.y);
     }
+
+    public void setText(String text) {
+        this.text = text;
+    }
 }

@@ -4,6 +4,7 @@ import bases.GameObject;
 import bases.friends.Friend;
 import bases.obstacles.Obstacles;
 import bases.players.Player;
+import bases.players.Score;
 import bases.renderers.ImageRenderer;
 import bases.scenes.Scene;
 import org.dyn4j.geometry.Circle;
@@ -13,6 +14,8 @@ import org.dyn4j.geometry.Vector2;
 public class Lv1Scene extends Scene {
     @Override
     public void init() {
+        Score score = new Score();
+        GameObject.add(score);
 
         GameObject gameObject = new GameObject();
         gameObject.setRenderer(ImageRenderer.create("assets/images/green_square.png"));

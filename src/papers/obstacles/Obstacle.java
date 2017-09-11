@@ -17,7 +17,7 @@ public class Obstacle extends GameObject{
         body.setAngularVelocity(angularVelocity);
         body.setLinearVelocity(linearVelocity);
         body.setAngularDamping(0);
-        body.setMass(MassType.INFINITE);
+        body.setMassType(MassType.INFINITE);
         this.color = Settings.instance.obstacleColor;
         this.renderer = new BodyRenderer();
     }

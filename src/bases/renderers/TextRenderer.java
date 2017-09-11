@@ -29,6 +29,10 @@ public class TextRenderer implements Renderer {
         this.color = color;
     }
 
+    public Color getColor() {
+        return color;
+    }
+
     @Override
     public void render(Graphics2D g2d, Vector2 position, Body body, Color color) {
         g2d.setFont(font);

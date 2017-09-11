@@ -8,123 +8,60 @@ import org.dyn4j.geometry.Vector2;
 import papers.friends.Friend;
 import papers.obstacles.Obstacle;
 import papers.players.Player;
+import papers.players.Score;
 
 
 public class Lv1Scene extends Scene {
     @Override
     public void init() {
-        Player player = new Player(new Circle(1), 0, 0);
-        player.getPosition().set(20, 200);
+        Player player = new Player(new Circle(1), 2, 3.6);
+        player.getPosition().set(31, 207);
         GameObject.add(player);
 
-        Obstacle obstacle1 = new Obstacle(new Rectangle(5, 20), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(20, 70);
-        GameObject.add(obstacle1);
+        Obstacle Obstacle = new Obstacle(new Rectangle(6, 16), 0, 0, new Vector2(0, 0));
+        Obstacle.getPosition().set(31, 78);
+        GameObject.add(Obstacle);
 
-        obstacle1 = new Obstacle(new Rectangle(5, 20), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(20, 325);
-        GameObject.add(obstacle1);
+        Obstacle = new Obstacle(new Rectangle(6, 16), 0, 0, new Vector2(0, 0));
+        Obstacle.getPosition().set(31, 336);
+        GameObject.add(Obstacle);
+// cong vao
 
-        obstacle1 = new Obstacle(new Rectangle(5, 20), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(715, 70);
-        GameObject.add(obstacle1);
+        Obstacle = new Obstacle(new Rectangle(6, 16), 0, 0, new Vector2(0, 0));
+        Obstacle.getPosition().set(705, 78);
+        GameObject.add(Obstacle);
 
-        obstacle1 = new Obstacle(new Rectangle(5, 20), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(715, 325);
-        GameObject.add(obstacle1);
+        Obstacle = new Obstacle(new Rectangle(6, 16), 0, 0, new Vector2(0, 0));
+        Obstacle.getPosition().set(705, 336);
+        GameObject.add(Obstacle);
+// cong ra
 
-        obstacle1 = new Obstacle(new Rectangle(100, 15), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(300, 20);
-        GameObject.add(obstacle1);
+        Obstacle = new Obstacle(new Rectangle(61.4, 7.8), 0, 0, new Vector2(0, 0));
+        Obstacle.getPosition().set(368, 39);
+        GameObject.add(Obstacle);
 
-        obstacle1 = new Obstacle(new Rectangle(100, 15), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(300, 380);
-        GameObject.add(obstacle1);
+        Obstacle = new Obstacle(new Rectangle(61.4, 7.8), 0, 0, new Vector2(0, 0));
+        Obstacle.getPosition().set(368, 375);
+        GameObject.add(Obstacle);
 
-        obstacle1 = new Obstacle(new Rectangle(5, 15), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(150, 140);
-        GameObject.add(obstacle1);
+// tran va san
 
-        obstacle1 = new Obstacle(new Rectangle(5, 4), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(150, 290);
-        GameObject.add(obstacle1);
+        Obstacle = new Obstacle(new Rectangle(2, 18), 1, 1, new Vector2(0, 0));
+        Obstacle.getPosition().set(225, 207);
+        GameObject.add(Obstacle);
 
-        obstacle1 = new Obstacle(new Rectangle(5, 5), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(280, 100);
-        GameObject.add(obstacle1);
+        Obstacle = new Obstacle(new Rectangle(18, 2), 1, 1, new Vector2(0, 0));
+        Obstacle.getPosition().set(225, 207);
+        GameObject.add(Obstacle);
 
-        obstacle1 = new Obstacle(new Rectangle(5, 15), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(280, 250);
-        GameObject.add(obstacle1);
+        Obstacle = new Obstacle(new Rectangle(2, 18), 1, 1, new Vector2(0, 0));
+        Obstacle.getPosition().set(530, 207);
+        GameObject.add(Obstacle);
 
-        obstacle1 = new Obstacle(new Rectangle(5, 8), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(410, 265);
-        GameObject.add(obstacle1);
-
-        obstacle1 = new Obstacle(new Rectangle(5, 12), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(410, 110);
-        GameObject.add(obstacle1);
-
-        obstacle1 = new Obstacle(new Rectangle(5, 17), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(540, 150);
-        GameObject.add(obstacle1);
-
-        obstacle1 = new Obstacle(new Rectangle(5, 3), 0, 0, new Vector2(0, 0));
-        obstacle1.getPosition().set(540, 300);
-        GameObject.add(obstacle1);
-
-        obstacle1 = new Obstacle(new Rectangle(1, 5), 0, 3, new Vector2(0, 0));
-        obstacle1.getPosition().set(630, 250);
-        GameObject.add(obstacle1);
-
-        obstacle1 = new Obstacle(new Rectangle(1, 5), 0, 3, new Vector2(0, 0));
-        obstacle1.getPosition().set(80, 250);
-        GameObject.add(obstacle1);
-
-        Friend friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(150, 200);
-        GameObject.add(friend);
-
-        friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(150, 220);
-        GameObject.add(friend);
-
-        friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(150, 240);
-        GameObject.add(friend);
-
-        friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(150, 250);
-        GameObject.add(friend);
-
-        friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(150, 260);
-        GameObject.add(friend);
-
-        friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(550, 240);
-        GameObject.add(friend);
-
-        friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(550, 250);
-        GameObject.add(friend);
-
-
-        friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(550, 260);
-        GameObject.add(friend);
-
-        friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(550, 270);
-        GameObject.add(friend);
-
-
-        friend = new Friend(new Circle(0.5), 0, 0, new Vector2(0, 0));
-        friend.getPosition().set(550, 280);
-        GameObject.add(friend);
-
-        Obstacle obstacle = new Obstacle(new Rectangle(1, 5), 0, 3, new Vector2(0, 0));
-        obstacle1.getPosition().set(340, 200);
-        GameObject.add(obstacle1);
+        Obstacle = new Obstacle(new Rectangle(18, 2), 1, 1, new Vector2(0, 0));
+        Obstacle.getPosition().set(530, 207);
+        GameObject.add(Obstacle);
+        Score score = new Score();
+        GameObject.add(score);
     }
 }

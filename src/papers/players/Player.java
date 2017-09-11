@@ -19,7 +19,7 @@ public class Player extends GameObject {
     private float radius = 100;
 
     private static Player instance = null;
-    static boolean death = false;
+    public static boolean death;
     private boolean mouseEnabled;
 
     public static Player getInstance() {
@@ -37,6 +37,7 @@ public class Player extends GameObject {
         this.color = Settings.instance.playerColor;
         this.renderer = new BodyRenderer();
         this.mouseEnabled = false;
+        this.death = false;
 
         instance = this;
 

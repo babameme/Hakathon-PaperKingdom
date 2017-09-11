@@ -28,6 +28,7 @@ public class GameWindow extends JFrame{
     private int w, h;
     //private Camera camera;
     private Vector2 position;
+    private boolean mouseEnabled;
 
     public GameWindow(String name){
         super(name);
@@ -39,6 +40,7 @@ public class GameWindow extends JFrame{
         this.canvas.setMaximumSize(size);
         this.add(this.canvas);
         this.setResizable(false);
+        this.mouseEnabled = false;
 
         this.pack();
 

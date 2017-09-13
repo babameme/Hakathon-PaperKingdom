@@ -37,10 +37,12 @@ public class SceneManager {
     public static Scene getNextScene() {
         Scene oldScene = currentScene;
         if (oldScene instanceof Lv1Scene) return new Lv2Scene();
-        if (oldScene instanceof Lv2Scene) return new Lv3Scene();
+        if (oldScene instanceof Lv2Scene) return new Lv7Scene();
+        if (oldScene instanceof Lv7Scene) return new Lv3Scene();
         if (oldScene instanceof Lv3Scene) return new Lv4Scene();
         if (oldScene instanceof Lv4Scene) return new Lv5Scene();
         if (oldScene instanceof Lv5Scene) return new Lv6Scene();
+
         else return new Lv1Scene();
     }
 }

@@ -6,6 +6,8 @@ import bases.scenes.SceneManager;
 import bases.scenes.gameOver.GameOver;
 //import bases.scenes.intros.IntroScene;
 import bases.scenes.intros.IntroScene;
+import bases.scenes.levelScenes.Lv4Scene;
+import bases.scenes.levelScenes.Lv7Scene;
 import bases.settings.Settings;
 import org.dyn4j.geometry.Vector2;
 
@@ -152,6 +154,6 @@ public class GameWindow extends JFrame{
     }
 
     private void setupLevel() {
-        SceneManager.changeScene(new IntroScene());
+        SceneManager.changeScene(new Lv7Scene());
     }
 }

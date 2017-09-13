@@ -2,7 +2,9 @@ package papers.players;
 
 import bases.FrameCounter;
 import bases.GameObject;
+import bases.inputs.MouseManager;
 import bases.renderers.TextRenderer;
+import bases.scenes.Scene;
 import org.dyn4j.geometry.Vector2;
 import papers.players.Player;
 
@@ -12,13 +14,15 @@ public class Score extends GameObject{
     public static int score;
     private FrameCounter frameCounter;
     private TextRenderer textRenderer;
+
+    public static final Score instance = new Score();
+
     public Score() {
         super();
         textRenderer = new TextRenderer("SCORE :  ", true);
         textRenderer.setColor(Color.GREEN);
-        this.position.set(500, 150);
+        this.position.set(500, 30);
         this.renderer = textRenderer;
-        this.score = 0;
         this.frameCounter = new FrameCounter(60);
     }
 

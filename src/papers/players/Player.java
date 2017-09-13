@@ -68,6 +68,9 @@ public class Player extends GameObject {
         if (death){
             SceneManager.changeScene(new GameOver());
         }
+        if(this.position.x >= Settings.instance.getGamePlayWidth()){
+            SceneManager.changeScene(SceneManager.getNextScene());
+        }
         super.normalUpdate(parentPosition);
         moveVerticalTowardsMouse();
     }

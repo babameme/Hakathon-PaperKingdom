@@ -11,10 +11,7 @@ import org.dyn4j.geometry.Vector2;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 import java.awt.image.BufferStrategy;
 
 public class GameWindow extends JFrame{
@@ -38,6 +35,31 @@ public class GameWindow extends JFrame{
         this.canvas.setPreferredSize(size);
         this.canvas.setMinimumSize(size);
         this.canvas.setMaximumSize(size);
+        this.canvas.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                MouseManager.instance.mouseClicked(e);
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        });
+
         this.add(this.canvas);
         this.setResizable(false);
         this.mouseEnabled = false;
@@ -74,6 +96,9 @@ public class GameWindow extends JFrame{
                 InputManager.instance.keyReleased(e);
             }
         });
+
+
+
         setupLevel();
     }
 

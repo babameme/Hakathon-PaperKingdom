@@ -1,6 +1,7 @@
 package bases.scenes.levelScenes;
 
 import bases.GameObject;
+import bases.scenes.Background;
 import bases.scenes.Scene;
 import org.dyn4j.geometry.Circle;
 import org.dyn4j.geometry.Rectangle;
@@ -10,10 +11,11 @@ import papers.obstacles.Obstacle;
 import papers.players.Player;
 import papers.players.Score;
 
-
-public class Lv1Scene extends Scene {
+public class Lv5Scene extends Scene{
     @Override
     public void init() {
+
+        addBackground();
 
         Player player = new Player(new Circle(0.7), 2, 3.6);
         player.getPosition().set(31, 207);
@@ -66,8 +68,63 @@ public class Lv1Scene extends Scene {
         obstacle = new Obstacle(new Rectangle(2, 4), 0, 0, new Vector2(0, 0));
         obstacle.getPosition().set(552, 297.5);
         GameObject.add(obstacle);
-		
-		Score.instance.score = 0;
-        GameObject.add(Score.instance);
+
+        obstacle = new Obstacle(new Rectangle(1, 4), 5, 5, new Vector2(0, 0));
+        obstacle.getPosition().set(122,250);
+        GameObject.add(obstacle);
+
+        obstacle = new Obstacle(new Rectangle(1, 5), 5, 5, new Vector2(0, 0));
+        obstacle.getPosition().set(490,120);
+        GameObject.add(obstacle);
+
+        obstacle = new Obstacle(new Rectangle(1, 4), 5, 5, new Vector2(0, 0));
+        obstacle.getPosition().set(368, 285);
+        GameObject.add(obstacle);
+
+        Friend friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(368, 207);
+        GameObject.add(friend);
+
+        friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(348, 207);
+        GameObject.add(friend);
+
+        friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(328, 207);
+        GameObject.add(friend);
+
+        friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(388, 207);
+        GameObject.add(friend);
+
+        friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(408, 207);
+        GameObject.add(friend);
+
+        friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(245, 217);
+        GameObject.add(friend);
+
+        friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(245, 237);
+        GameObject.add(friend);
+
+        friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(245, 257);
+        GameObject.add(friend);
+
+        friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(245, 277);
+        GameObject.add(friend);
+
+        friend = new Friend(new Rectangle(1, 1), 5, 5, new Vector2(0, 0) );
+        friend.getPosition().set(245, 297);
+        GameObject.add(friend);
+
+		GameObject.add(Score.instance);
+    }
+
+    private void addBackground() {
+        GameObject.add(new Background());
     }
 }

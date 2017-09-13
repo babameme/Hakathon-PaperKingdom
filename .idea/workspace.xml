@@ -2,20 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df622d4f-640c-4436-9388-5d7b5d0ad7cd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bases/scenes/Background.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv2Scene.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv4Scene.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv5Scene.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv6Scene.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$1.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$2.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/renderers/TextRenderer.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/renderers/TextRenderer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/inputs/MouseManager.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/inputs/MouseManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/gameOver/Button.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/gameOver/Button.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/gameOver/GameOverBackground.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/gameOver/GameOverBackground.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/intros/button/IntroButton.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/intros/button/IntroButton.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/levelScenes/Lv1Scene.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/levelScenes/Lv1Scene.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/papers/obstacles/Obstacle.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/papers/obstacles/Obstacle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/papers/players/Player$1.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/papers/players/Player$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/papers/players/Player.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/papers/players/Player.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/papers/players/Score.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/papers/players/Score.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/renderers/TextRenderer.java" afterPath="$PROJECT_DIR$/src/bases/renderers/TextRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/inputs/MouseManager.java" afterPath="$PROJECT_DIR$/src/bases/inputs/MouseManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/scenes/SceneManager.java" afterPath="$PROJECT_DIR$/src/bases/scenes/SceneManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/scenes/gameOver/Button.java" afterPath="$PROJECT_DIR$/src/bases/scenes/gameOver/Button.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/scenes/gameOver/GameOverBackground.java" afterPath="$PROJECT_DIR$/src/bases/scenes/gameOver/GameOverBackground.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/scenes/intros/button/IntroButton.java" afterPath="$PROJECT_DIR$/src/bases/scenes/intros/button/IntroButton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv1Scene.java" afterPath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv1Scene.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/papers/obstacles/Obstacle.java" afterPath="$PROJECT_DIR$/src/papers/obstacles/Obstacle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/papers/players/Player.java" afterPath="$PROJECT_DIR$/src/papers/players/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/papers/players/Score.java" afterPath="$PROJECT_DIR$/src/papers/players/Score.java" />
     </list>
@@ -29,14 +38,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+      <file leaf-file-name="MouseManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bases/inputs/MouseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="96" column="29" lean-forward="false" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+            <state relative-caret-position="102">
+              <caret line="8" column="69" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/papers/players/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="71" column="65" lean-forward="false" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,8 +63,8 @@
       <file leaf-file-name="Lv1Scene.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv1Scene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+            <state relative-caret-position="177">
+              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +72,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Button.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/Button.java">
+      <file leaf-file-name="Lv2Scene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv2Scene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+            <state relative-caret-position="136">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lv3Scene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lv4Scene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv4Scene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lv5Scene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv5Scene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lv6Scene.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv6Scene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,34 +133,18 @@
       <file leaf-file-name="Score.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/papers/players/Score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="272">
+              <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextRenderer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/bases/renderers/TextRenderer.java">
+      <file leaf-file-name="InputManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bases/inputs/InputManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YourScore.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/button/YourScore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="133">
+              <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -135,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/bases/PhysicsBody.java" />
         <option value="$PROJECT_DIR$/src/bases/physics/PhysicsBody.java" />
         <option value="$PROJECT_DIR$/src/Program.java" />
         <option value="$PROJECT_DIR$/src/org/dyn4j/geometry/Vector2.java" />
@@ -148,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/bases/obstacles/Obstacles.java" />
         <option value="$PROJECT_DIR$/src/bases/renderers/BodyRenderer.java" />
         <option value="$PROJECT_DIR$/src/org/dyn4j/dynamics/Body.java" />
-        <option value="$PROJECT_DIR$/src/bases/inputs/MouseManager.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/intros/IntroScene.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/gameOver/button/Exit.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/intros/button/Music.java" />
@@ -158,7 +205,6 @@
         <option value="$PROJECT_DIR$/src/bases/scenes/intros/button/HightScore.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/gameOver/button/Replay.java" />
         <option value="$PROJECT_DIR$/src/bases/players/Score.java" />
-        <option value="$PROJECT_DIR$/src/bases/scenes/gameOver/Button.java" />
         <option value="$PROJECT_DIR$/src/bases/obstacles/Obstacle.java" />
         <option value="$PROJECT_DIR$/src/papers/friends/Friend.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/Level1Scene.java" />
@@ -169,17 +215,26 @@
         <option value="$PROJECT_DIR$/src/bases/actions/WaitAction.java" />
         <option value="$PROJECT_DIR$/src/bases/actions/Action.java" />
         <option value="$PROJECT_DIR$/src/tklibs/AudioUtils.java" />
-        <option value="$PROJECT_DIR$/src/bases/scenes/gameOver/GameOverBackground.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/gameOver/GameOver.java" />
         <option value="$PROJECT_DIR$/src/bases/GameObject.java" />
         <option value="$PROJECT_DIR$/src/bases/physics/Physics.java" />
         <option value="$PROJECT_DIR$/src/papers/obstacles/Obstacle.java" />
-        <option value="$PROJECT_DIR$/src/papers/players/Player.java" />
-        <option value="$PROJECT_DIR$/src/GameWindow.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/gameOver/button/YourScore.java" />
-        <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv1Scene.java" />
-        <option value="$PROJECT_DIR$/src/papers/players/Score.java" />
         <option value="$PROJECT_DIR$/src/bases/renderers/TextRenderer.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/gameOver/GameOverBackground.java" />
+        <option value="$PROJECT_DIR$/src/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/bases/inputs/MouseManager.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/gameOver/Button.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/intros/button/IntroButton.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/SceneManager.java" />
+        <option value="$PROJECT_DIR$/src/papers/players/Player.java" />
+        <option value="$PROJECT_DIR$/src/papers/players/Score.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv1Scene.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv2Scene.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv4Scene.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv5Scene.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv6Scene.java" />
       </list>
     </option>
   </component>
@@ -189,8 +244,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="662" />
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
@@ -210,83 +265,83 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bases" type="462c0819:PsiDirectoryNode" />
+              <item name="inputs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bases" type="462c0819:PsiDirectoryNode" />
               <item name="scenes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bases" type="462c0819:PsiDirectoryNode" />
-              <item name="scenes" type="462c0819:PsiDirectoryNode" />
-              <item name="gameOver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bases" type="462c0819:PsiDirectoryNode" />
-              <item name="scenes" type="462c0819:PsiDirectoryNode" />
-              <item name="gameOver" type="462c0819:PsiDirectoryNode" />
-              <item name="button" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bases" type="462c0819:PsiDirectoryNode" />
               <item name="scenes" type="462c0819:PsiDirectoryNode" />
               <item name="levelScenes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="papers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="papers" type="462c0819:PsiDirectoryNode" />
-              <item name="obstacles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wtf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wtf" type="462c0819:PsiDirectoryNode" />
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="papers" type="462c0819:PsiDirectoryNode" />
               <item name="players" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tklibs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,7 +350,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hakathon-PaperKingdom - Copy" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Hakathon-PaperKingdom" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -443,23 +498,22 @@
     <option name="totallyTimeSpent" value="16459000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3120125" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31072554" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28237128" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2807571" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12079063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17569546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -488,52 +542,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/dyn4j/geometry/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1632">
-          <caret line="78" column="11" lean-forward="false" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/friends/Friend.java" />
-    <entry file="file://$PROJECT_DIR$/src/bases/renderers/BodyRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="33" column="86" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/dyn4j/dynamics/Body.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="172" column="22" lean-forward="false" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/inputs/MouseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/renderers/Renderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/intros/button/Music.java" />
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/intros/button/StartButton.java" />
     <entry file="file://$PROJECT_DIR$/src/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -565,14 +573,6 @@
     <entry file="file://$PROJECT_DIR$/assets/images/musicON.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/inputs/InputManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bases/scenes/intros/IntroBackground.java" />
@@ -653,26 +653,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/GameOverBackground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="68" lean-forward="false" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/intros/button/IntroButton.java" />
     <entry file="file://$PROJECT_DIR$/src/tklibs/AudioUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="72" column="5" lean-forward="false" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/GameOver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -691,69 +675,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/intros/IntroScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/SceneManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/papers/players/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="83" column="58" lean-forward="true" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1432#1719#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bases/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="142" column="21" lean-forward="false" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="96" column="29" lean-forward="false" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv1Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -766,24 +693,199 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/papers/players/Score.java">
+    <entry file="file://$PROJECT_DIR$/src/bases/renderers/TextRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        <state relative-caret-position="272">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/Gameover2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/GameOverBackground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="73" lean-forward="false" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/renderers/TextRenderer.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/awt/event/MouseAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="202">
+          <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/intros/button/StartButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/intros/IntroScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#1372#1373#0" expanded="true" />
+            <element signature="e#1441#1442#0" expanded="true" />
+            <element signature="e#2224#2386#0" expanded="true" />
+            <element signature="e#2385#2386#0" expanded="true" />
+            <element signature="e#2592#2593#0" expanded="true" />
+            <element signature="e#2659#2660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/GameOver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/Background.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/SceneManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/intros/button/IntroButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="88" column="36" lean-forward="true" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/papers/players/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="71" column="65" lean-forward="false" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/inputs/InputManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/inputs/MouseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="69" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/papers/players/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv1Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv2Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv4Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv5Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv6Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

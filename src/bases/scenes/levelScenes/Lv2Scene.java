@@ -3,8 +3,10 @@ package bases.scenes.levelScenes;
 import bases.GameObject;
 import bases.scenes.Scene;
 import org.dyn4j.geometry.Circle;
+import org.dyn4j.geometry.MassType;
 import org.dyn4j.geometry.Rectangle;
 import org.dyn4j.geometry.Vector2;
+import papers.friends.Friend;
 import papers.obstacles.Obstacle;
 import papers.players.Player;
 import papers.players.Score;
@@ -46,28 +48,34 @@ public class Lv2Scene extends Scene {
         GameObject.add(obstacle);
 // tran va san
 
-        obstacle = new Obstacle(new Rectangle(6, 13), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(184, 142);
+        obstacle = new Obstacle(new Rectangle(6, 34), 0, 0, new Vector2(0, -2));
+        obstacle.getPosition().set(184, 42);
         GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(6, 2.6), 0, 0, new Vector2(0, 0));
+        obstacle = new Obstacle(new Rectangle(6, 14.6), 0, 0, new Vector2(0, -2));
         obstacle.getPosition().set(184, 323.5);
         GameObject.add(obstacle);
 // cap 1
-        obstacle = new Obstacle(new Rectangle(6, 2.6), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(368, 90.5);
+        obstacle = new Obstacle(new Rectangle(6, 32.6), 0, 0, new Vector2(0, 2));
+        obstacle.getPosition().set(368, 35.5);
         GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(6, 13), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(368, 271.5);
+        obstacle = new Obstacle(new Rectangle(6, 34), 0, 0, new Vector2(0, 2));
+        obstacle.getPosition().set(368, 405.5);
         GameObject.add(obstacle);
 //cap 2
-        obstacle = new Obstacle(new Rectangle(6, 13), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(521.5, 142);
+
+//// Chan
+//        Friend friend = new Friend(new Rectangle(1, 3), 0, 0, new Vector2(0, 0));
+//        friend.getPosition().set(300, 150);
+//        GameObject.add(friend);
+
+        obstacle = new Obstacle(new Rectangle(6, 29), 0, 0, new Vector2(0, -1.5));
+        obstacle.getPosition().set(521.5, 22);
         GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(6, 2.6), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(521.5, 323.5);
+        obstacle = new Obstacle(new Rectangle(6, 17.6), 0, 0, new Vector2(0, -1.5));
+        obstacle.getPosition().set(521.5, 295.5);
         GameObject.add(obstacle);
 //cap 3
 

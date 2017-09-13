@@ -31,7 +31,7 @@ public class Player extends GameObject {
         body = new Body();
         convex.rotate(rotation);
         body.addFixture(convex);
-        body.setMass(MassType.FIXED_LINEAR_VELOCITY);
+        body.setMass(MassType.FIXED_ANGULAR_VELOCITY);
         body.setLinearVelocity(SPEED, 0);
         body.setAngularVelocity(angularVelocity);
         this.color = Settings.instance.playerColor;

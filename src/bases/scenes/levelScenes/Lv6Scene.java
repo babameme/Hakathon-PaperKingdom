@@ -10,16 +10,23 @@ import papers.obstacles.Obstacle;
 import papers.players.Player;
 import papers.players.Score;
 
+import java.awt.*;
+
 public class Lv6Scene extends Scene {
 
     @Override
     public void init() {
 
+        Obstacle bgr = new Obstacle(new Rectangle(73.6, 41.4),0,0,new Vector2(7, 0));
+        bgr.getPosition().set(-368, 207);
+        bgr.setColor(Color.cyan);
+        GameObject.add(bgr);
+
+
         Player player = new Player(new Circle(0.7), 2, 3.6);
         player.getPosition().set(31, 207);
         GameObject.add(player);
 
-        addBackground();
 
 
         Obstacle obstacle = new Obstacle(new Rectangle(6, 16), 0, 0, new Vector2(0, 0));

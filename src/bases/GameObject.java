@@ -192,4 +192,8 @@ public class GameObject {
     public Body getBody() {
         return body;
     }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
 }

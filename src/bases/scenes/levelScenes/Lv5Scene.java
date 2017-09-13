@@ -11,11 +11,17 @@ import papers.obstacles.Obstacle;
 import papers.players.Player;
 import papers.players.Score;
 
+import java.awt.*;
+
 public class Lv5Scene extends Scene{
     @Override
     public void init() {
 
-        addBackground();
+        //addBackground();
+        Obstacle bgr = new Obstacle(new Rectangle(73.6, 41.4),0,0,new Vector2(7, 0));
+        bgr.getPosition().set(-368, 207);
+        bgr.setColor(Color.cyan);
+        GameObject.add(bgr);
 
         Player player = new Player(new Circle(0.7), 2, 3.6);
         player.getPosition().set(31, 207);
@@ -45,27 +51,23 @@ public class Lv5Scene extends Scene{
         obstacle.getPosition().set(368, 375);
         GameObject.add(obstacle);
 // tran va san
-        obstacle = new Obstacle(new Rectangle(24.5, 7.7), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(184, 116);
+        obstacle = new Obstacle(new Rectangle(24.3, 8.0), 0, 0, new Vector2(0, 0));
+        obstacle.getPosition().set(182, 118);
         GameObject.add(obstacle);
 
         obstacle = new Obstacle(new Rectangle(12, 5.2), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(245, 181);
+        obstacle.getPosition().set(244, 181);
         GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(36.8, 2.6), 0, 0, new Vector2(0, 0));
+        /*obstacle = new Obstacle(new Rectangle(36.8, 2.6), 0, 0, new Vector2(0, 0));
         obstacle.getPosition().set(245, 323);
-        GameObject.add(obstacle);
+        GameObject.add(obstacle);*/
 
-        obstacle = new Obstacle(new Rectangle(12, 10.5), 0, 0, new Vector2(0, 0));
+        obstacle = new Obstacle(new Rectangle(12.1, 10.5), 0, 0, new Vector2(0, 0));
         obstacle.getPosition().set(490.5, 233);
         GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(24.5, 8), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(552, 297.5);
-        GameObject.add(obstacle);
-
-        obstacle = new Obstacle(new Rectangle(2, 4), 0, 0, new Vector2(0, 0));
+        obstacle = new Obstacle(new Rectangle(24.5, 8.3), 0, 0, new Vector2(0, 0));
         obstacle.getPosition().set(552, 297.5);
         GameObject.add(obstacle);
 

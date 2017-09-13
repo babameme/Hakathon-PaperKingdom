@@ -44,21 +44,39 @@ public class Lv3Scene extends Scene {
         GameObject.add(obstacle);
 // tran va san
 
-        obstacle = new Obstacle(new Rectangle(2, 18), 1, 1, new Vector2(0, 0));
+        obstacle = new Obstacle(new Rectangle(2, 8), 1, 2, new Vector2(0, 0));
         obstacle.getPosition().set(225, 207);
         GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(18, 2), 1, 1, new Vector2(0, 0));
+        obstacle = new Obstacle(new Rectangle(8, 2), 1, 2, new Vector2(0, 0));
         obstacle.getPosition().set(225, 207);
         GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(2, 18), 1, 1, new Vector2(0, 0));
+        obstacle = new Obstacle(new Rectangle(2, 8), 1, -2, new Vector2(0, 0));
         obstacle.getPosition().set(530, 207);
         GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(18, 2), 1, 1, new Vector2(0, 0));
+        obstacle = new Obstacle(new Rectangle(8, 2), 1, -2, new Vector2(0, 0));
         obstacle.getPosition().set(530, 207);
         GameObject.add(obstacle);
+
+
+        obstacle = new Obstacle(new Rectangle(2, 8), 1, 3, new Vector2(0, 0));
+        obstacle.getPosition().set(380, 140);
+        GameObject.add(obstacle);
+
+        obstacle = new Obstacle(new Rectangle(8, 2), 1, 3, new Vector2(0, 0));
+        obstacle.getPosition().set(380, 140);
+        GameObject.add(obstacle);
+
+        obstacle = new Obstacle(new Rectangle(2, 8), 1, -3, new Vector2(0, 0));
+        obstacle.getPosition().set(380, 280);
+        GameObject.add(obstacle);
+
+        obstacle = new Obstacle(new Rectangle(8, 2), 1, -3, new Vector2(0, 0));
+        obstacle.getPosition().set(380, 280);
+        GameObject.add(obstacle);
+
 		GameObject.add(Score.instance);
     }
 }

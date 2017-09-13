@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df622d4f-640c-4436-9388-5d7b5d0ad7cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv7Scene.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$1.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$2.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$3.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/GameWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/SceneManager.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/SceneManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/levelScenes/Lv3Scene.class" afterPath="$PROJECT_DIR$/out/production/HackathonPaperKingdom/bases/scenes/levelScenes/Lv3Scene.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/scenes/SceneManager.java" afterPath="$PROJECT_DIR$/src/bases/scenes/SceneManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/papers/players/Player.java" afterPath="$PROJECT_DIR$/src/papers/players/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java" afterPath="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,17 +56,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameWindow.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="156" column="40" lean-forward="false" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
+            <state relative-caret-position="312">
+              <caret line="157" column="49" lean-forward="false" selection-start-line="157" selection-start-column="49" selection-end-line="157" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-                <element signature="e#1525#1526#0" expanded="true" />
-                <element signature="e#4642#4643#0" expanded="true" />
-                <element signature="e#4698#4699#0" expanded="true" />
+                <element signature="e#1498#1499#0" expanded="true" />
+                <element signature="e#1567#1568#0" expanded="true" />
+                <element signature="e#4684#4685#0" expanded="true" />
+                <element signature="e#4742#4743#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lv3Scene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="64" column="45" lean-forward="true" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,8 +97,8 @@
       <file leaf-file-name="Lv4Scene.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv4Scene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="158" column="31" lean-forward="true" selection-start-line="158" selection-start-column="31" selection-end-line="158" selection-end-column="31" />
+            <state relative-caret-position="125">
+              <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,11 +116,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YourScore.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YourScore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/button/YourScore.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Program.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -188,17 +210,17 @@
         <option value="$PROJECT_DIR$/src/bases/scenes/intros/button/IntroButton.java" />
         <option value="$PROJECT_DIR$/src/papers/players/Score.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv2Scene.java" />
-        <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv4Scene.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv5Scene.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv6Scene.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/Background.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv1Scene.java" />
         <option value="$PROJECT_DIR$/src/papers/friends/Friend.java" />
-        <option value="$PROJECT_DIR$/src/GameWindow.java" />
         <option value="$PROJECT_DIR$/src/papers/players/Player.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv7Scene.java" />
         <option value="$PROJECT_DIR$/src/bases/scenes/SceneManager.java" />
+        <option value="$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java" />
+        <option value="$PROJECT_DIR$/src/GameWindow.java" />
       </list>
     </option>
   </component>
@@ -244,12 +266,6 @@
             <path>
               <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -264,23 +280,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bases" type="462c0819:PsiDirectoryNode" />
               <item name="scenes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bases" type="462c0819:PsiDirectoryNode" />
-              <item name="scenes" type="462c0819:PsiDirectoryNode" />
-              <item name="gameOver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bases" type="462c0819:PsiDirectoryNode" />
-              <item name="scenes" type="462c0819:PsiDirectoryNode" />
-              <item name="gameOver" type="462c0819:PsiDirectoryNode" />
-              <item name="button" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
@@ -295,33 +294,6 @@
               <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="papers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="papers" type="462c0819:PsiDirectoryNode" />
-              <item name="friends" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="papers" type="462c0819:PsiDirectoryNode" />
-              <item name="obstacles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="papers" type="462c0819:PsiDirectoryNode" />
-              <item name="players" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hakathon-PaperKingdom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hakathon-PaperKingdom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tklibs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -340,6 +312,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="TEXT" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -531,20 +504,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="1300" column="0" lean-forward="false" selection-start-line="1300" selection-start-column="0" selection-end-line="1300" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tklibs/SpriteUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/background.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -770,16 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bases/scenes/Background.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -794,30 +743,6 @@
           <caret line="51" column="33" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="51" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv4Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="158" column="31" lean-forward="true" selection-start-line="158" selection-start-column="31" selection-end-line="158" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="156" column="40" lean-forward="false" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-            <element signature="e#1525#1526#0" expanded="true" />
-            <element signature="e#4642#4643#0" expanded="true" />
-            <element signature="e#4698#4699#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -864,11 +789,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bases/scenes/gameOver/button/YourScore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv4Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bases/scenes/levelScenes/Lv3Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="64" column="45" lean-forward="true" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="157" column="49" lean-forward="false" selection-start-line="157" selection-start-column="49" selection-end-line="157" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1498#1499#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#4684#4685#0" expanded="true" />
+            <element signature="e#4742#4743#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -43,28 +43,23 @@ public class Lv1Scene extends Scene {
         obstacle.getPosition().set(368, 375);
         GameObject.add(obstacle);
 // tran va san
-        obstacle = new Obstacle(new Rectangle(24.5, 7.7), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(184, 116);
+        obstacle = new Obstacle(new Rectangle(24.3, 8.0), 0, 0, new Vector2(0, 0));
+        obstacle.getPosition().set(182, 118);
         GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(12, 5.2), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(245, 181);
+        obstacle = new Obstacle(new Rectangle(12, 23.2), 0, 0, new Vector2(0, -1));
+        obstacle.getPosition().set(244, 141);
         GameObject.add(obstacle);
+        //Nho len 2
 
-        obstacle = new Obstacle(new Rectangle(36.8, 2.6), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(245, 323);
-        GameObject.add(obstacle);
 
-        obstacle = new Obstacle(new Rectangle(12, 10.5), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(490.5, 233);
+        obstacle = new Obstacle(new Rectangle(12, 18.5), 0, 0, new Vector2(0, 1));
+        obstacle.getPosition().set(489.5, 300);
         GameObject.add(obstacle);
+        // Nho len 1
 
         obstacle = new Obstacle(new Rectangle(24.5, 8), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(552, 297.5);
-        GameObject.add(obstacle);
-
-        obstacle = new Obstacle(new Rectangle(2, 4), 0, 0, new Vector2(0, 0));
-        obstacle.getPosition().set(552, 297.5);
+        obstacle.getPosition().set(552, 295.5);
         GameObject.add(obstacle);
 		
 		Score.instance.score = 0;

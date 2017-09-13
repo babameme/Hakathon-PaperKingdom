@@ -23,7 +23,7 @@ public class Background extends GameObject {
     @Override
     protected void normalUpdate(Vector2 parentPosition) {
         super.normalUpdate(parentPosition);
-        position.x += 1.5;
+        position.x += 1;
 //        if (position.y > imageHeight) {
 //            position.y = imageHeight;
 //        }

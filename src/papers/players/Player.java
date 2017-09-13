@@ -15,7 +15,7 @@ import org.dyn4j.geometry.*;
 import papers.obstacles.Obstacle;
 
 public class Player extends GameObject {
-    private static final double SPEED = 8;
+    private static final double SPEED = 13;
     private float radius = 100;
 
     private static Player instance = null;
